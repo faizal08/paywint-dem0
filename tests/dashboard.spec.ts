@@ -21,7 +21,7 @@ test('test', async ({ page }) => {
     clickCount: 3
   });
   await page.getByTestId('new-product').click();
-  await page.getByTestId('new-product').fill('bluetooth speaker');g
+  await page.getByTestId('new-product').fill('bluetooth speaker');
   await page.getByTestId('add-button').click();
   await page.getByRole('cell', { name: 'New' }).click();
   await page.getByTestId('logout-button').click();
